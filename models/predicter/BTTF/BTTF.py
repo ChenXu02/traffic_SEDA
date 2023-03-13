@@ -364,8 +364,8 @@ for j in {'cm'}:
         rank = 30
         pred_step = 144
         time_lags = np.array([1, 2, 3, 144, 145, 146, 7 * 144, 7 * 144 + 1, 7 * 144 + 2])
-        burn_iter = 15
-        gibbs_iter = 20
+        burn_iter = 100
+        gibbs_iter = 200
         for multi_step in [1]:
             start = time.time()
             print('Prediction time horizon (delta) = {}.'.format(multi_step))
